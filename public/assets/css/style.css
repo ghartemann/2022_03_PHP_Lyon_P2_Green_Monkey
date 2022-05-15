@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;0,700;1,100&display=swap");
+
+:root {
+    --font-family: "Grandstander", cursive;
+    --bs-green-darker: #0f5b01;
+    --bs-green-dark: #27ae60;
+    --bs-green-light: #2ecc71;
+    --bs-yellow-darker: #df7a0e;
+    --bs-yellow-dark: #f39c12;
+    --bs-yellow-darker: #df7a0e;
+    --bs-yellow-light: #f1c40f;
+    --text-color: #ffffff;
+    --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 1px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.question-container,
+.MainResultsContainer,
+.admin-container,
+.MainConnection,
+.MobileBodybackGround,
+.mainStatsContainer {
+    background: url(/assets/images/jungle-bg-blue.png);
+    min-height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: var(--text-color);
+}
+
+html,
+body {
+    font-size: 10px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+/* ---------- MAIN TITLES ----------*/
+.pageTitleContainer {
+    background-color: var(--bs-green-dark);
+    padding: 5em 2em 0.5em 2em;
+    margin: 1em;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.pageTitle {
+    font-size: 4rem;
+}
+
+.pageSubtitle {
+    font-size: 2rem;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background-color: var(--bs-green-light);
+    box-shadow: var(--box-shadow);
+}
+
+#navbar-title {
+    font-weight: bold;
+    font-size: 3.6em;
+    line-height: 0.8em;
+    color: var(--text-color);
+}
+
+.offcanvas {
+    background-color: var(--bs-green-dark);
+}
+
+#offcanvasNavbarLabel {
+    color: var(--text-color);
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 2.6em;
+}
+
+#nav-li-color a {
+    color: var(--text-color);
+}
+
+.logo-top-nav {
+    vertical-align: middle;
+    width: 6em;
+    margin-right: 1vh;
+}
+
+/* ---------- HOME PAGE ---------- */
+/* MOBILE VIEW */
+.MobileBodybackGround {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.MobileContainer {
+    background-color: var(--bs-yellow-light);
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    padding: 3vh;
+    width: 90vw;
+}
+
+.CentralParagraph {
+    font-size: calc(100% + 1vw + 1vh);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.MobileButton {
+    background-color: var(--bs-yellow-dark);
+    color: var(--text-color);
+    border-radius: 25px;
+    height: 7rem;
+    font-size: 4.3rem;
+    width: 70vw;
+}
+
+.MobileButton:hover {
+    color: var(--text-color);
+    background-color: var(--bs-yellow-darker);
+}
+
+.LogoReziseHomepage {
+    width: 25%;
+    filter: invert(27%) sepia(14%) saturate(4421%) hue-rotate(72deg)
+        brightness(93%) contrast(104%);
+}
+
+.MobileBodybackGround.d-lg-none {
+    margin-top: 6em;
+}
+
+/* DESKTOP VIEW */
+.DesktopBodyBackground {
+    background-color: var(--text-color);
+    background-size: cover;
+    height: 100vh;
+}
+
+.HomeHeaderBackgrounDesktopView {
+    background-image: url(/assets/images/tropicaldesktopbackground.jpg);
+    background-size: auto 100vw;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HomeheaderTitleDesktopView {
+    font-size: 7.7em;
+    font-weight: bold;
+    text-shadow: 3px 1px 10px black;
+}
+
+.HomeButtonDesktopView {
+    background-color: var(--bs-yellow-light);
+    color: #0f5b01;
+    font-size: 5.6em;
+    height: 82px;
+    width: 400px;
+    border-radius: 15px;
+    font-family: var(--font-family);
+    vertical-align: center;
+    box-shadow: 3px 1px 10px black;
+}
+
+.HomeButtonDesktopView:hover {
+    color: var(--text-color);
+    background-color: var(--bs-yellow-darker);
+}
+
+.HomeArticleTextFormat {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.HomeArticleDesktopView {
+    text-align: left;
+    padding-left: 2em;
+    color: black;
+    font-size: 1em;
+}
+
+.HomeArticleFontResizeDesktopView {
+    font-size: 2em;
+    text-align: justify;
+}
+
+.HomeCenterTitleDesktopView {
+    margin-top: 5em;
+}
+
+.HomeNameColorGreen {
+    color: var(--bs-green-dark);
+}
+
+#PColorGreen {
+    color: var(--bs-green-dark);
+    font-weight: bold;
+}
+
+.HomeArticleWidthHistory {
+    margin: 3em;
+    margin-right: 7em;
+}
+
+.HomeArticleWidthWelcome {
+    margin: 5em;
+    margin-top: 2em;
+    font-size: 1em;
+}
+.HomeH2TextFormatWelcomeTitle {
+    font-size: 4.8em;
+}
+
+.HomeH2TextFormat {
+    margin-top: -0.29em;
+}
+
+
+/* ---------- CALCULATOR PAGE ---------- */
+.question {
+    background-color: var(--bs-yellow-light);
+    color: var(--bs-green-darker);
+    margin-right: 5em;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    min-height: 30vh;
+    min-width: 25vh;
+    width: 100em;
+    margin-top: 8vw;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+.questionTitle {
+    font-size: 2.5rem;
+}
+
+.questionChoice {
+    font-size: 2.5rem;
+    margin-left: 2vw;
+}
+
+.QuestionButton {
+    background-color: var(--bs-yellow-dark);
+    color: var(--text-color);
+    border-radius: 25px;
+    height: 7rem;
+    font-size: 2.9rem;
+    font-family: var(--font-family);
+    width: initial;
+    margin: 1.5vh;
+}
+
+.listingQuestion {
+    font-size: 2rem;
+}
+
+.QuestionButton:hover {
+    color: var(--text-color);
+    background-color: var(--bs-yellow-darker);
+}
+
+.calculatorCheck {
+    cursor: pointer!important;
+}
+
+.listingQuestion {
+    font-size: 2rem;
+}
+
+.speechBubble p {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+.speechBubble h2 {
+    font-size: 4em;
+}
+
+.speechBubble {
+    position: relative;
+    margin-left: 20em;
+    padding: 1em;
+    width: 55em;
+    height: max-content;
+    border-radius: 0.25em;
+    transform: rotate(-4deg) rotateY(15deg);
+    background: var(--bs-green-dark);
+    text-align: center;
+    margin-bottom: 15em;
+    margin-right: 5em;
+}
+
+.speechBubble:before, .speechBubble:after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+}
+
+.speechBubble:after {
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: inherit;
+    transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+    background: var(--bs-green-light);
+}
+
+.speechBubble:before {
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-top-color: var(--bs-green-light);
+    border-bottom: 0;
+    margin-left: -6em;
+    margin-bottom: -31px;
+}
+
+.question h2 {
+    font-size: 3rem;
+}
+
+.speechBubble a {
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--bs-yellow-light);
+}
+
+.btn-question {
+    background-color: var(--bs-green-dark);
+    color: var(--text-color);
+    width: 200px;
+}
+
+#final-button {
+    display: none;
+    margin-top: 10vh;
+    background-color: var(--bs-yellow-light);
+    color: var(--bs-green-darker);
+    font-size: 3rem;
+    width: 50%;
+    height: 15vh;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+}
+
+#final-button:hover {
+    background-color: var(--bs-yellow-dark);
+    color: var(--text-color);
+}
+
+/* ---------- RESULTS PAGE ---------- */
+.results {
+    display: flex;
+    justify-content: center;
+}
+
+.resultsContainer, .statsContainer {
+    background-color: var(--bs-yellow-light);
+    margin: 1em;
+    padding: 3vh;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-family: var(--font-family);
+    width: auto;
+    color: var(--bs-green-darker);
+}
+
+.spinningMonkeContainer {
+    padding-top: 18vh;
+}
+
+.resultsContainer h1,
+h2 {
+    font-size: 5em;
+}
+
+.resultsByCategory {
+    font-size: 2.5em;
+    display: block;
+}
+
+.resultsByCategory table {
+    display: block;
+}
+
+.resultsTitle {
+    margin-bottom: 3vh;
+}
+
+.resultBold {
+    font-weight: bold;
+}
+
+.resultsTotal,
+.resultsCommentContainer {
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.resultHigher {
+    color: var(--bs-yellow-darker);
+    font-weight: bold;
+}
+
+.resultLower {
+    color: var(--bs-green-light);
+    font-weight: bold;
+}
+
+.resultsComment {
+    font-size: 2rem;
+}
+
+.resultsButton {
+    background-color: var(--bs-yellow-dark);
+    color: var(--text-color);
+    border-radius: 25px;
+    height: 7rem;
+    font-size: 2.9rem;
+    font-family: var(--font-family);
+    width: initial;
+    margin: 1.5vh;
+}
+
+.resultsButton:hover {
+    background-color: var(--bs-yellow-darker);
+    color: var(--text-color);
+}
+
+/* ---------- LOGIN ---------- */
+.LoginContainer {
+    background-color: var(--bs-yellow-light);
+    color: var(--bs-green-darker);
+    margin: 1em;
+    margin-top: 10vh;
+    padding: 3vh;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    max-width: 90%;
+}
+
+.LoginForm {
+    font-size: 1.8rem;
+    padding-top: initial;
+}
+
+.LoginInput {
+    font-size: 1.5rem;
+    background-color: var(--bs-yellow-dark);
+    border: none;
+    color: var(--text-color) !important;
+}
+
+.LoginInput::placeholder {
+    color: var(--text-color);
+}
+
+.LoginInput:focus {
+    background-color: var(--bs-yellow-darker);
+    box-shadow: none;
+}
+
+.LoginValidation {
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: -2vh;
+}
+
+.loginRemember {
+    text-align: initial;
+}
+
+.LoginCreate {
+    font-size: initial;
+    color: var(--bs-green-dark);
+}
+
+.LoginCreateLink {
+    color: var(--bs-yellow-darker);
+    text-decoration: none;
+}
+
+.LoginCreateLink:hover {
+    color: var(--bs-yellow-dark);
+}
+
+.LoginButton {
+    background-color: var(--bs-yellow-dark);
+    color: var(--text-color);
+    border-radius: 15px;
+    font-size: 2.9rem;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    vertical-align: center;
+}
+
+.LoginButton:hover {
+    color: var(--text-color);
+    background-color: var(--bs-yellow-darker);
+}
+
+.LoginCheckbox {
+    background-color: var(--bs-yellow-dark);
+    border: none;
+    cursor: pointer;
+}
+
+.LoginCheckbox:focus {
+    box-shadow: none;
+}
+
+.LoginCheckbox:hover {
+    background-color: var(--bs-yellow-darker);
+}
+
+.LoginCheckbox:checked {
+    background-color: var(--bs-yellow-dark);
+}
+
+.LoginCheckbox:checked:hover {
+    background-color: var(--bs-yellow-darker);
+}
+
+.errorLoginContainer {
+    max-width: 275px;
+}
+
+.errorLogin {
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+/*---------- ADMIN EDIT PAGE -----------*/
+.admin-page {
+    padding-bottom: 2vh;
+}
+
+.accordion {
+    color: var(--text-color);
+}
+
+.accordion-button {
+    font-size: 0.4em;
+}
+
+:active.accordion-button,
+:focus.accordion-button {
+    background-color: var(--bs-green-light);
+    color: var(--text-color);
+}
+
+.accordion-collapse {
+    background-color: var(--bs-yellow-light);
+    color: var(--text-color);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-green-dark) !important;
+    color: var(--text-color) !important;
+}
+
+.answer-value {
+    font-size: 1.6rem;
+}
+
+.adminBtn {
+    height: auto;
+    box-shadow: var(--box-shadow);
+}
+
+.admin-input {
+    font-size: 2rem;
+    background-color: var(--bs-yellow-dark);
+    border: none;
+    color: var(--text-color) !important;
+}
+
+.admin-input:focus {
+    background-color: var(--bs-yellow-darker);
+    box-shadow: none;
+    border: none;
+}
+
+.btn-change-value {
+    background-color: var(--bs-green-dark);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.btn-change-value:hover {
+    background-color: var(--bs-green-light);
+    color: var(--text-color);
+}
+
+.errorAdmin {
+    font-size: 2rem;
+    list-style-type: none;
+}
+
+/*--------- ADMIN STATS PAGE ----------------------*/
+.statsTitle {
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+}
+
+.statsContainer {
+    margin-top: 0vh;
+}
+
+.resultParagraph {
+    font-size: 1.6rem;
+    list-style-type: none;
+}
+
+.myChart {
+    max-width: 80%;
+}
+
+/*--------- ADMIN RESULTS PAGE ----------------------*/
+td {
+    border: 1px solid white;
+    text-align: center;
+    width: 5.55%;
+    min-width: 35px;
+}
+
+.spinningMonke {
+    max-width: 100%;
+}
+
+.firstCol {
+    width: 7%;
+    min-width: 100px;
+}
+
+.tableContainer {
+    width: 100vw;
+    overflow: auto;
+}
+
+.table-results {
+    font-size: 1.6rem;
+    color: var(--bs-green-darker);
+}
+
+/*--------- FOOTER ----------------------*/
+.footer {
+    background: var(--bs-green-dark);
+    box-shadow: var(--box-shadow);
+}
+
+.footerName {
+padding-top: 1vh;
+}
+
+.footerName, .footerText, .footerLinks {
+    font-size: 2.1rem;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 0vh;
+}
+
+.footerLinks {
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.footerLinks:hover {
+    color: var(--bs-yellow-light);
+}
